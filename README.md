@@ -157,14 +157,24 @@ We use the datasets listed below, following DUSt3R's preprocessing step. See the
   - [MegaDepth](https://www.cs.cornell.edu/projects/megadepth/)
   - [StaticThings3D](https://github.com/lmb-freiburg/robustmvd/blob/master/rmvd/data/README.md#staticthings3d)
 
+Download the datasets into `data/Datasets/`
+```text
+data/Datasets/
+├── blendedmvs_processed/
+└── megadepth_processed/
+.
+.
+└── waymo_processed/
+```
+
 __2D-3D__
 
 We follow [2D3DMATR](https://github.com/minhaolee/2D3DMATR) to prepare the 2D-3D datasets.
 
-The __7Scenes__ dataset can be downloaded from [BaiduYun](https://pan.baidu.com/s/1duymPG4dJte4Yx-qov5yeg) (extraction code: `m7mc`). Place it under `data/` and organize as follows:
+The __7Scenes__ dataset can be downloaded from [BaiduYun](https://pan.baidu.com/s/1duymPG4dJte4Yx-qov5yeg) (extraction code: `m7mc`). Place it under `data/Datasets/` and organize as follows:
 
 ```text
-data/
+data/Datasets/
 └── 7Scenes/
     ├── metadata/
     └── data/
@@ -177,10 +187,10 @@ data/
         └── stairs/
 ```
 
-The __RGBD-ScenesV2__ dataset can be downloaded from [BaiduYun](https://pan.baidu.com/s/14A2y8jghCdk6nAZa0_yEZA) (extraction code: `2dc7`). Place it under `data/` and organize as follows:
+The __RGBD-ScenesV2__ dataset can be downloaded from [BaiduYun](https://pan.baidu.com/s/14A2y8jghCdk6nAZa0_yEZA) (extraction code: `2dc7`). Place it under `data/Datasets/` and organize as follows:
 
 ```text
-data/
+data/Datasets/
 └── RGBDScenesV2/
     ├── metadata/
     └── data/
@@ -191,7 +201,7 @@ data/
 
 __3D-3D__
 
-We use [3DMatch](https://3dmatch.cs.princeton.edu/) and [ModelNet](https://modelnet.cs.princeton.edu/) for 3D-3D. Download the datasets into `data/` using:
+We use [3DMatch](https://3dmatch.cs.princeton.edu/) and [ModelNet](https://modelnet.cs.princeton.edu/) for 3D-3D. Download the datasets into `data/Datasets/` using:
 ```bash
 bash scripts/download_3d3d_data.sh
 ```
@@ -199,7 +209,7 @@ bash scripts/download_3d3d_data.sh
 The resulting layout should be:
 
 ```text
-data/
+data/Datasets/
 ├── indoor/
 └── modelnet40_ply_hdf5_2048/
 ```
