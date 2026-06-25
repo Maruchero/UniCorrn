@@ -1,3 +1,21 @@
+# UR
+
+This is an adaptation of UniCorrn to work withUR data.
+
+Here are some suggestions for the installation:
+- Remember to copy `.env.example` to `.env` and set the environment variables to the correct path. They should be already set to the correct path but if you have errors regarding CUDA_HOME or CUDA_PATH look at the `.env` file.
+- You may need to install torch and torchvision before running `pip install -r requirements.txt`. You can do this with the following command:
+    ```bash
+    pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
+    ```
+- You may also need to install cuda toolkit 12.8 if you don't have it already. You can do this with the following command:
+    ```bash
+    conda install nvidia::cuda-toolkit==12.8
+    ```
+    Bear in mind that if you have this already installed system-wide, you MUST change paths in the `.env` file to point to the correct version of the toolkit (usually `/usr/local/cuda`).
+
+If you encounter any issues, please open an issue on the GitHub repository. I am open to feedback and available to help.
+
 <h1 align="center">🦄 UniCorrn: Unified Correspondence Transformer Across 2D and 3D <br> CVPR 2026</h1>
 
 <div align="center">
